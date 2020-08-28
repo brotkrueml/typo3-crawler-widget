@@ -10,6 +10,8 @@
             <trans-unit id="dashboard.widget.group.description" resname="dashboard.widget.group.description">
                 <source>This preset will give you a dashboard containing the most common Crawler widgets.</source>
             </trans-unit>
+
+            <!-- QueueSize Widget -->
             <trans-unit id="dashboard.widget.queuesize.title" resname="dashboard.widget.queuesize.title">
                 <source>Queue size</source>
             </trans-unit>
@@ -18,6 +20,17 @@
             </trans-unit>
             <trans-unit id="dashboard.widget.queuesize.widget.title" resname="dashboard.widget.queuesize.widget.title">
                 <source>Number of uncrawled items</source>
+            </trans-unit>
+
+            <!-- Failures Widget -->
+            <trans-unit id="dashboard.widget.failures.title" resname="dashboard.widget.failures.title">
+                <source>Failures</source>
+            </trans-unit>
+            <trans-unit id="dashboard.widget.failures.description" resname="dashboard.widget.failures.description">
+                <source>Widget for displaying the failures in your queue</source>
+            </trans-unit>
+            <trans-unit id="dashboard.widget.failures.widget.title" resname="dashboard.widget.failures.widget.title">
+                <source>Number of failed items</source>
             </trans-unit>
         </body>
     </file>

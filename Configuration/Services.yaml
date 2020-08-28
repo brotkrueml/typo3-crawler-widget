@@ -24,3 +24,21 @@ services:
         iconIdentifier: 'content-widget-number'
         height: 'small'
         width: 'small'
+
+  dashboard.widget.typo3_crawler_widget.failures:
+    class: 'FriendsOfCrawler\CrawlerWidget\Widgets\FailuresWidget'
+    arguments:
+      $view: '@dashboard.views.widget'
+      $dataProvider: '@FriendsOfCrawler\CrawlerWidget\Widgets\Provider\FailuresDataProvider'
+      $options:
+        title: 'LLL:EXT:typo3_crawler_widget/Resources/Private/Language/locallang.xlf:dashboard.widget.failures.title'
+        icon: 'apps-toolbar-menu-search'
+    tags:
+      - name: dashboard.widget
+        identifier: 'crawler.failures'
+        groupNames: 'crawler'
+        title: 'LLL:EXT:typo3_crawler_widget/Resources/Private/Language/locallang.xlf:dashboard.widget.failures.widget.title'
+        description: 'LLL:EXT:typo3_crawler_widget/Resources/Private/Language/locallang.xlf:dashboard.widget.failures.description'
+        iconIdentifier: 'content-widget-number'
+        height: 'small'
+        width: 'small'
